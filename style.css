@@ -38,7 +38,6 @@ body {
 }
 
 .images {
-  background-color: hsl(178, 100%, 50%);
   border-radius: 10px;
   height: 302px;
   overflow: hidden;
@@ -47,6 +46,7 @@ body {
 }
 
 .images:hover {
+  background-color: hsl(178, 100%, 50%);
   cursor: pointer;
 }
 
@@ -141,4 +141,61 @@ body {
   color: hsl(178, 100%, 50%);
   font-size: 600;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 350px) {
+  .nft-card {
+    gap: 1rem;
+    max-width: 250px;
+    padding: 1rem;
+  }
+
+  .images {
+    height: 202px;
+  }
+
+  .view {
+    height: 36px;
+    width: 36px;
+    top: calc(50% - 18px);
+    left: calc(50% - 18px);
+  }
+
+  .heading {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.2rem;
+  }
+
+  .price-div {
+    gap: 0.3rem;
+  }
+
+  .price {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  .deadline {
+    font-size: 0.75rem;
+  }
+
+  .author-div {
+    gap: 0.75rem;
+    padding-bottom: 0;
+  }
+
+  .author {
+    font-size: 0.75rem;
+  }
+
+  .attribution {
+    font-size: 10px;
+    padding-bottom: 0.2rem;
+  }
 }
